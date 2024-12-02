@@ -3,8 +3,6 @@ package com.loginsecurity.springloginsecurity.model;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -29,4 +27,5 @@ public class Usuario {
     @Pattern(regexp = "^(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?])(?=(?:[^0-9]*[0-9][^0-9]*){2})(?=.*[A-Z]).+$")
     private String password;
     private String session_id;
+    private String role;
 }

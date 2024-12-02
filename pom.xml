@@ -109,12 +109,5 @@
             </plugin>
 
         </plugins>
-
-    </build>
-
- 
-    <configuration>
-    <skipTests>true</skipTests>
-	</configuration>
-  
+</build>
 </project>
